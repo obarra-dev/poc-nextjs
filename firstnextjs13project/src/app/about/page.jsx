@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 function About() {
   const router = useRouter();
@@ -16,6 +17,12 @@ function About() {
         laborum ullam, consectetur vitae vel accusamus alias molestiae eum
         beatae! Magnam, quod cum.
       </p>
+      <Image
+        src="/vercel.svg"
+        width={500}
+        height={500}
+        alt="Picture of the author"
+      />
       <button
         onClick={() => {
           alert("doing someting");

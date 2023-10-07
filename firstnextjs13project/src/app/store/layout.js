@@ -1,3 +1,4 @@
+import Counter from "@/components/Counter";
 import Link from "next/link";
 
 export const metadata = {
@@ -8,7 +9,8 @@ export default function StoreLayout({ children }) {
   return (
     <>
       <nav>
-        <h3>Store Section</h3>
+        <marquee>Store Section layout</marquee>
+        <Counter/>
         <ul>
           <li>
             <Link href="/store/electronic">Electronic</Link>
